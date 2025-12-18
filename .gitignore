@@ -1,0 +1,20 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Debug / old artifacts
+*_stage1.npy
+
+# Raw datasets
+games*.csv
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Virtual env
+venv/
+.env/
