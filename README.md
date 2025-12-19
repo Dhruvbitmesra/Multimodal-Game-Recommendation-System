@@ -1,7 +1,6 @@
-<video width="100%" controls muted>
-  <source src="assets/demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<p align="center">
+  <img src="assets/demo.gif" width="100%" />
+</p>
 
 # 🎮 Multimodal Game Recommendation System
 
