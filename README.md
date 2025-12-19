@@ -1,15 +1,26 @@
+<video width="100%" controls muted>
+  <source src="assets/demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 # 🎮 Multimodal Game Recommendation System
 
-An **AI-powered content-based video game recommendation system** that leverages **multimodal deep learning** (text + images) and **cross-modal retrieval using CLIP** to recommend similar games — even in **cold-start scenarios**.
+## 🎥 Video Demo
+> **Quick walkthrough of the system (UI + recommendations)**
+
+📂 `assets/demo.mp4`  
+▶️ [Click here to watch the demo](assets/demo.mp4)
 
 ---
 
 ## 📌 Project Overview
 
-Traditional recommendation systems rely on user ratings or interaction history, which often fails for **new users** or **new games**.  
+An **AI-powered content-based video game recommendation system** that leverages **multimodal deep learning (text + images)** and **cross-modal retrieval using CLIP** to recommend similar games — even in **cold-start scenarios**.
+
+Traditional recommendation systems rely heavily on user ratings or interaction history, which often fail for **new users** or **new games**.  
 This project solves that problem by using **game content itself**:
 
-- 📄 **Text** → Game description & genres  
+- 📄 **Text** → Game descriptions & genres  
 - 🖼️ **Images** → Game posters  
 - 🔀 **Multimodal embeddings** → Semantic similarity  
 - 🔗 **CLIP** → Image-to-text recommendation  
@@ -31,21 +42,22 @@ The final system is deployed as an **interactive Streamlit web application**.
 ---
 
 ## 🏗️ System Architecture
-Stage 1: Prototype & Validation
-└─ Small dataset to verify pipeline correctness
 
-Stage 2: Multimodal Embedding Generation
-├─ BERT → Text embeddings
-├─ ResNet50 → Image embeddings
-└─ Fusion → Final game embedding
+### Stage 1: Prototype & Validation
+- Small dataset to verify pipeline correctness
 
-Stage 3: Cross-Modal CLIP Retrieval
-├─ CLIP Text Embeddings (offline)
-└─ Image → Text similarity search
+### Stage 2: Multimodal Embedding Generation
+- **BERT** → Text embeddings  
+- **ResNet50** → Image embeddings  
+- **Fusion** → Final game embedding  
 
-Deployment
-└─ Streamlit + Render
+### Stage 3: Cross-Modal CLIP Retrieval
+- CLIP text embeddings (offline)
+- Image → Text similarity search
 
+### Deployment
+- **Streamlit**
+- **Render**
 
 ---
 
@@ -67,16 +79,16 @@ Deployment
 ## 🧪 Technologies Used
 
 ### 🔹 Core ML / DL
-- **BERT** (text understanding)
-- **ResNet50** (visual feature extraction)
-- **CLIP (ViT-B/32)** for cross-modal learning
-- **Transfer Learning** (frozen encoders)
+- **BERT** – Text understanding
+- **ResNet50** – Visual feature extraction
+- **CLIP (ViT-B/32)** – Cross-modal learning
+- **Transfer Learning** – Frozen encoders
 
 ### 🔹 Libraries
 - `numpy`, `pandas`
 - `scikit-learn`
 - `torch`, `torchvision`
-- `CLIP (OpenAI)`
+- `clip (OpenAI)`
 - `streamlit`
 
 ### 🔹 Deployment
@@ -96,32 +108,20 @@ Deployment
 ├── game_metadata.csv              # Clean metadata used by app
 ├── assets/
 │   ├── banner.jpg                 # UI banner
-│   └── demo.mp4                   # Demo video (added manually)
+│   └── demo.mp4                   # Demo video
 ├── requirements.txt
 ├── .gitignore
 └── README.md
 
-▶️ Demo Video
-
-🎥 Project Demo
-
-assets/demo.mp4
-
-
-You can:
-
-Play it locally
-
-Upload it to YouTube / Drive and link it here
-
-Showcase it during interviews or presentations
-
-🚀 How to Run Locally
+##🚀 How to Run Locally
+```
 1️⃣ Install Dependencies
 pip install -r requirements.txt
 
 2️⃣ Run the App
 streamlit run app.py
+
+
 
 🧠 Design Decisions
 
@@ -135,31 +135,9 @@ CLIP → Enables image-based recommendation without labels
 
 Clean separation of stages → Industry-style ML system design
 
-🎯 Interview One-Liner
-
-“I built a multimodal content-based game recommendation system using pretrained BERT and ResNet50 embeddings, extended it with CLIP for cross-modal image-to-text retrieval, and deployed it as a scalable Streamlit application.”
 
 👤 Author
 
 Dhruv
 IMSc – Quantitative Economics & Data Science
 BIT Mesra
-
-⭐ Final Note
-
-This project demonstrates:
-
-End-to-end ML system design
-
-Multimodal deep learning
-
-Transfer learning
-
-Cross-modal retrieval
-
-Deployment-ready engineering
-
-If you find this project interesting, feel free to ⭐ the repository.
-
-
-
