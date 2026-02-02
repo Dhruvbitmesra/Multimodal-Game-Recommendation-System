@@ -47,7 +47,7 @@ The final system is deployed as an **interactive Streamlit web application**.
 
 ### Stage 2: Multimodal Embedding Generation
 - **BERT** → Text embeddings  
-- **ResNet50** → Image embeddings  
+- **ResNet50** → Image embeddings 
 - **Fusion** → Final game embedding  
 
 ### Stage 3: Cross-Modal CLIP Retrieval
